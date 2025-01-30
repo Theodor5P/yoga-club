@@ -9,6 +9,19 @@ body {
   line-height: 1.6;
   color: #333;
 }
+/* Navigation */
+nav {
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 .logo {
   font-size: 1.5rem;
   text-decoration: none;
@@ -50,20 +63,17 @@ body {
   min-height: 100vh;
   background: #fff;
 }
-
 .hero-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
 }
-
 .hero-image {
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
-
 .hero-content {
   padding: 4rem;
   display: flex;
@@ -71,13 +81,11 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-
 .hero-title {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   color: #008000;
 }
-
 .hero-text {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -89,12 +97,10 @@ body {
   color: #008000;
   text-align: center;
 }
-
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-
 .about-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -102,7 +108,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .about-card {
   padding: 2rem;
   background: #111;
@@ -113,28 +118,30 @@ body {
   padding: 5rem 5%;
   background: white;
 }
-
 .signup h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #008000;
 }
-
+.signup .price-text {
+    text-align: center;
+    color: #008000;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: "Courier New", monospace;
+}
 .form-container {
   max-width: 600px;
   margin: 0 auto;
 }
-
 .form-group {
   margin-bottom: 1.5rem;
 }
-
 label {
   display: block;
   margin-bottom: 0.5rem;
 }
-
 input,
 textarea {
   width: 100%;
@@ -143,7 +150,6 @@ textarea {
   border-radius: 4px;
   font-size: 1rem;
 }
-
 button {
   background: #008000;
   color: white;
@@ -153,7 +159,6 @@ button {
   cursor: pointer;
   border-radius: 4px;
 }
-
 /* Footer */
 footer {
   background: #000;
@@ -161,29 +166,24 @@ footer {
   text-align: center;
   color: #fff;
 }
-
 .footer-content h2 {
   color: #008000;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .footer-content .subtitle {
   color: #008000;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-
 .contact-info {
   margin-bottom: 2rem;
   color: #fff;
 }
-
 .contact-info p {
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
-
 #social-networks {
   display: flex;
   justify-content: center;
@@ -192,7 +192,6 @@ footer {
   gap: 3rem;
   margin-top: 2rem;
 }
-
 #social-networks a {
   text-decoration: none;
   background: white;
@@ -203,16 +202,13 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 #social-networks i {
   font-size: 140%;
   color: #000;
 }
-
 #social-networks a:hover {
   background: #008000;
 }
-
 #social-networks a:hover i {
   color: white;
 }
