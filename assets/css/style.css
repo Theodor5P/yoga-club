@@ -216,3 +216,33 @@ footer {
 #social-networks a:hover i {
   color: white;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    order: -1;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
