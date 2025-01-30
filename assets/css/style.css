@@ -108,52 +108,111 @@ body {
   background: #111;
   border-radius: 8px;
 }
-   /* Sign Up Section */
-   .signup {
-    padding: 5rem 5%;
-    background: white;
+/* Sign Up Section */
+.signup {
+  padding: 5rem 5%;
+  background: white;
 }
 
 .signup h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #008000;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #008000;
 }
 
 .form-container {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 button {
-    background: #008000;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+  background: #008000;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 /* Footer */
 footer {
-  background-color: orange;
+  background: #000;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content h2 {
+  color: #008000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content .subtitle {
+  color: #008000;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+#social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+#social-networks a {
+  text-decoration: none;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-networks i {
+  font-size: 140%;
+  color: #000;
+}
+
+#social-networks a:hover {
+  background: #008000;
+}
+
+#social-networks a:hover i {
+  color: white;
 }
