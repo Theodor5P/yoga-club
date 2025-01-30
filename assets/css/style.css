@@ -82,15 +82,31 @@ body {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-
-/* Header */
-header {
-  background-color: lightcoral;
+/* About Section */
+.about {
+  padding: 5rem 5%;
+  background: #000;
+  color: #008000;
+  text-align: center;
 }
 
-/* Main content */
-main {
-  background-color: lightblue;
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  padding: 2rem;
+  background: #111;
+  border-radius: 8px;
 }
 
 /* Footer */
