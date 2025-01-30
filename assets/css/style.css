@@ -125,11 +125,11 @@ nav {
   color: #008000;
 }
 .signup .price-text {
-    text-align: center;
-    color: #008000;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    font-family: "Courier New", monospace;
+  text-align: center;
+  color: #008000;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Courier New", monospace;
 }
 .form-container {
   max-width: 600px;
@@ -212,33 +212,51 @@ footer {
 #social-networks a:hover i {
   color: white;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 5%;
     gap: 1rem;
   }
 
   .nav-list {
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
   }
 
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
+    margin-top: 9rem;
   }
 
   .hero-content {
     padding: 2rem;
     text-align: center;
     align-items: center;
-    order: -1;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-container {
+    padding: 0 1rem;
   }
 }
