@@ -1,34 +1,99 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Courier New', monospace;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+  color: #333;
 }
 .logo {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+}
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #008000;
+  transition: width 0.3s ease;
+}
+.nav-list a:hover::after {
+  width: 100%;
+}
+.nav-list a:hover {
+  color: #008000;
+}
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: #fff;
 }
 
+.hero-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-content {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #008000;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
 
 /* Header */
 header {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 /* Main content */
 main {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 /* Footer */
 footer {
-    background-color: orange;
+  background-color: orange;
 }
